@@ -3,11 +3,21 @@ package com.example.assignmentsecond;
 public class VerData {
 
     private String dataname, expdataone,expdatatwo;
+    private  boolean expendable;
+
+    public boolean isExpendable() {
+        return expendable;
+    }
+
+    public void setExpendable(boolean expendable) {
+        this.expendable = expendable;
+    }
 
     public VerData(String dataname, String expdataone, String expdatatwo) {
         this.dataname = dataname;
         this.expdataone = expdataone;
         this.expdatatwo = expdatatwo;
+        this.expendable = false;
     }
 
     public String getDataname() {
